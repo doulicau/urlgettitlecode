@@ -4,7 +4,7 @@
 
 使用方法：  
 
-python3 gettitlecode.py -f url.txt  
+python3 urlgettitlecode.py -f url.txt  
 
 结果输出到result.csv中  
 
