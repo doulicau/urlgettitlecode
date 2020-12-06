@@ -9,6 +9,7 @@ python3 gettitlecode.py -f url.txt
 结果输出到result.csv中  
 
 如图：  
-
+![Image text](https://github.com/doulicau/urlgettitlecode/blob/master/1.jpg)
+![Image text](https://github.com/doulicau/urlgettitlecode/blob/master/2.jpg)
 
 
