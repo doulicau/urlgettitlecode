@@ -2,9 +2,11 @@
 
 测试1W个站点，需要时间不到10分钟。  
 
-使用方法：  
+使用方法：
 
-python3 urlgettitlecode.py -f url.txt  
+测试的url放到url.txt中，然后：
+
+python3 gettitlecode.py
 
 结果输出到result.csv中  
 
