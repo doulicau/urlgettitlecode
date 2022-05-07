@@ -12,8 +12,8 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
  
 start = time.time()
 lock = threading.Lock()
-
-f = open("result.csv", "a", encoding='utf-8')
+savefilename = time.strftime("%Y-%m-%d %H.%M.%S")
+f = open(savefilename+'.csv', "a", encoding='utf-8')
 f.write("源地址"+","+"跳转地址"+","+"状态码"+","+"标题"+'\n')
 f = f.close()
 
@@ -42,13 +42,13 @@ def get_title(url,timeout=5):
             except :
                 title = "[ ]"
             print(url+","+res.url+","+code1+","+title)
-            with open("result.csv", "a", encoding='utf-8') as f2:
+            with open(savefilename+'.csv', "a", encoding='utf-8') as f2:
                 f2.writelines(url+","+res.url+","+code1+","+title+'\n')
 
         else:
             title = " "
             print(url + "," + " " + "," + code1 + "," + title)
-            with open("result.csv", "a", encoding='utf-8') as f2:
+            with open(savefilename+'.csv', "a", encoding='utf-8') as f2:
                 f2.writelines(url + "," + " " + "," + code1 + "," + title + '\n')
 
 
