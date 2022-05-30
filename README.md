@@ -8,7 +8,7 @@
 
 python3 gettitlecode.py
 
-结果输出到result.csv中  
+结果输出到执行脚本时间.xls中  
 
 如图：  
 ![Image text](https://github.com/doulicau/urlgettitlecode/blob/master/1.jpg)  
